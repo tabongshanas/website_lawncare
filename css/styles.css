@@ -436,9 +436,6 @@ section {
 
 .farm-work-activities {
 
-    width: 30%;
-    height: 69%;
-
     display: flex;
     flex-direction: column;
 }
@@ -584,6 +581,7 @@ section {
 .activities {
     height: 50px;
     width: 550px;
+    margin-right: 40px;
     margin-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
@@ -884,10 +882,12 @@ section {
 }
 .text-container {
     width: 300px;
-    padding: 25px 0px 30px 25px;
+    padding: 25px 25px 30px 25px;
     margin-left: 50px;
     margin-bottom: 30px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 20px 20px 0px 0px;
 }
 .main-text {
     width: 100%;
@@ -1092,16 +1092,15 @@ section {
 }
 .more-infor-container {
     /* width: 250px; */
-    box-shadow: 1px 1px 5px;
-    background-color: #f1f1f1;
+    /* box-shadow: 1px 1px 5px; */
     margin-top: 100px;
     /* padding-top: 600px; */
     margin-left: 50px;
     white-space: wrap;
 
-    /* position: absolute;
-    bottom: 10px;
-    right: 30px; */
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 
     display: flex;
     /* justify-content: flex-end; */
@@ -1128,6 +1127,7 @@ section {
     color: white;
     text-align: center;
     transition: 0.3s;
+    font-size: 50px;
 }
 .know-more.know-more-ed {
     opacity: 0.1;
@@ -1156,7 +1156,7 @@ section {
     /* position: absolute;
     top: 699px; */
     position: relative;
-    bottom: 270px;
+    bottom: 57px;
 }
 
 
@@ -1320,8 +1320,8 @@ section {
 }
 
 .footer-container {
-    border: 1px solid blue;
     background-color:#252525;
+    padding-bottom: 150px;
 
     display: flex;
     flex-direction: row;
@@ -1329,17 +1329,13 @@ section {
     flex-wrap: wrap;
 }
 .icon-text-container {
-    border: 1px solid fuchsia;
     margin-top: 100px;
-    margin-right: 100px;
 }
 .icon-text-header {
-    border: 1px solid green;
     white-space: nowrap;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .icon-text {
-    border: 1px solid turquoise;
     font-size: 25px;
     width: 370px;
     font-family: "Poppins", Arial, sans-serif;
@@ -1348,7 +1344,6 @@ section {
     margin-top: -30px;
 }
 .main-icons-container {
-    border: 1px solid red;
     width: 240px;
     margin-top: 50px;
     
@@ -1390,12 +1385,10 @@ section {
 }
 
 .footer-services {
-    border: 1px solid orange;
     margin-top: 100px;
     margin-left: 50px;
 }
 .service-links-container {
-    border: 1px solid white;
     width: 100%;
     margin-bottom: 20px;
     white-space: nowrap;
@@ -1408,11 +1401,14 @@ section {
 }
 
 .location-icon-text {
-    border: 1px solid lawngreen;
     color: rgba(255, 255, 255, 0.7);
     width: 300px;
     font-size: 20px;
     margin-bottom: 10px;
+}
+.location-icon-text .second:hover {
+    cursor: pointer;
+    color: #4e9525;
 }
 .location-icon-text .ed {
     color: white;
@@ -1423,5 +1419,48 @@ section {
     top: -25px;
     margin-left: 50px;
     font-size: 23px;
-    border: 1px solid fuchsia;
+}
+.open-day h4 {
+    text-transform: capitalize;
+    color: #fbd341;
+    font-size: 20px;
+    margin: 0px;
+}
+.open-day-details {
+    margin-top: 10px;
+}
+.open-day-details p {
+    margin: 0px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 30px;
+}
+.open-day-details.second {
+    width: 300px;
+}
+.open-day.second {
+    margin-top: 10px;
+}
+
+.footer-conclude {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.9);
+
+    position: relative;
+    bottom: -70px;
+}
+.footer-conclude span {
+    color: #fbd341;
+    transition: 0.3s;
+}
+.footer-conclude span:hover {
+    cursor: pointer;
+    color: #4e9525;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+.footer-conclude p {
+    text-align: center;
 }
