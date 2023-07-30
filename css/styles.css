@@ -1101,12 +1101,16 @@ section {
     position: fixed;
     right: 30px;
     bottom: 30px;
+    opacity: 0.7;
 
     display: flex;
     /* justify-content: flex-end; */
     flex-direction: row;
     align-self: flex-end;
     align-items: flex-end;
+}
+.more-infor-container:hover {
+    opacity: 1;
 }
 .know-more {
     background-color: #3e7220;
